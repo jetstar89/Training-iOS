@@ -73,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		427532B520885EBD0089BA91 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4BFF636020873EF4001EA6F5 /* ClientTableViewCell.swift */,
+				4BFF636120873EF4001EA6F5 /* ClientTableViewCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		4B21627F208587BF002795B4 = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +103,7 @@
 			children = (
 				4B2162CD2085A29E002795B4 /* Model */,
 				4B21629D2085881E002795B4 /* BaseClass */,
-				4B2162A12085881E002795B4 /* ViewController */,
+				4B2162A12085881E002795B4 /* Scenes */,
 				4B21628B208587BF002795B4 /* AppDelegate.swift */,
 				4B216294208587BF002795B4 /* LaunchScreen.storyboard */,
 				4B216297208587BF002795B4 /* Info.plist */,
@@ -113,14 +122,14 @@
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
-		4B2162A12085881E002795B4 /* ViewController */ = {
+		4B2162A12085881E002795B4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				E7D3CC622087A75F000D7996 /* Setting */,
 				4B2162A22085881E002795B4 /* Home */,
 				4B2162A32085881E002795B4 /* Login */,
 			);
-			path = ViewController;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		4B2162A22085881E002795B4 /* Home */ = {
@@ -128,8 +137,8 @@
 			children = (
 				4B2162B920859054002795B4 /* Profile */,
 				4B2162B820859040002795B4 /* Clients */,
-				4B2162B320858FFA002795B4 /* HomeViewController.swift */,
 				4B2162B720859030002795B4 /* Properties */,
+				4B2162B320858FFA002795B4 /* HomeViewController.swift */,
 				4B2162B420858FFA002795B4 /* HomeViewController.xib */,
 			);
 			path = Home;
@@ -158,10 +167,9 @@
 		4B2162B820859040002795B4 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				427532B520885EBD0089BA91 /* CustomViews */,
 				4B2162BF20859093002795B4 /* ClientViewController.swift */,
 				4B2162C020859093002795B4 /* ClientViewController.xib */,
-				4BFF636020873EF4001EA6F5 /* ClientTableViewCell.swift */,
-				4BFF636120873EF4001EA6F5 /* ClientTableViewCell.xib */,
 			);
 			path = Clients;
 			sourceTree = "<group>";

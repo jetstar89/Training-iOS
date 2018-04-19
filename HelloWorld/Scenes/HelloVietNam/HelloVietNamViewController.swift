@@ -27,7 +27,7 @@ class HelloVietNamViewController: UIViewController {
     }
 
     @objc func onSubmit(_ notify: Notification) {
-        
+        //
     }
     
     override func didReceiveMemoryWarning() {

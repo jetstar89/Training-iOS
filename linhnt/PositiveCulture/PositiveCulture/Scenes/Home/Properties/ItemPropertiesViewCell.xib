@@ -50,10 +50,9 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USz-ab-Pcr">
-                        <rect key="frame" x="159.5" y="96" width="136" height="32"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USz-ab-Pcr">
+                        <rect key="frame" x="159.5" y="96" width="46" height="32"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="136" id="In2-wU-h2O"/>
                             <constraint firstAttribute="height" constant="32" id="rlC-HU-ftD"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
@@ -61,7 +60,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyM-4W-fYw">
-                        <rect key="frame" x="295.5" y="104" width="118.5" height="21"/>
+                        <rect key="frame" x="205.5" y="104" width="208.5" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="RRo-KA-BtD"/>
                         </constraints>

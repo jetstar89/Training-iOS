@@ -20,7 +20,10 @@ class LoginViewController: BaseViewController {
     
     override func initViews() {
         self.title = "Login"
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "IcBack"), style: .plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "IcBack"),
+                                                                style: .plain,
+                                                                target: self,
+                                                                action: nil)
     }
 
 }

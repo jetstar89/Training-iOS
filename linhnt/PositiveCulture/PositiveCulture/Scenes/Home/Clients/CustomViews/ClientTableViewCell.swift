@@ -16,7 +16,6 @@ class ClientTableViewCell: UITableViewCell {
     
     @IBOutlet weak var propertyLabel: UILabel!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
     }

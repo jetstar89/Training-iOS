@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         
         
         heightConstraint.constant = 100
+        
+        Singleton.sharedInstance.country = "VietNam"
     }
 
     override func didReceiveMemoryWarning() {

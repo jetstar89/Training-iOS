@@ -15,12 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-//        let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
-//        let navigationController = BaseNavViewController(rootViewController: loginViewController)
-        
         let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let navigationController = BaseNavViewController(rootViewController: homeViewController)
-        self.window?.rootViewController = navigationController
+//        let navigationController = BaseNavViewController(rootViewController: homeViewController)
+        self.window?.rootViewController = homeViewController
         return true
     }
 

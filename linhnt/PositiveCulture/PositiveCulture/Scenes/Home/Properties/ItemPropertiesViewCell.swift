@@ -25,8 +25,20 @@ class ItemPropertiesViewCell: UITableViewCell {
     
     @IBOutlet weak var statusLabel: UILabel!
     
+    var property: Property! {
+        didSet {
+            itemImageView.image = UIImage(named: property.image)
+            titleLabel.text = property.title
+            addressLabel.text = property.address
+            costLabel.text = String(format:"S$ %.f", property.cost)
+            agentLabel.text = property.agent
+            squareLabel.text = property.square
+            statusLabel.text = property.status
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
     
 }

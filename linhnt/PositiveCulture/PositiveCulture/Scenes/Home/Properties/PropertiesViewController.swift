@@ -24,26 +24,37 @@ class PropertiesViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.tabBarController?.title = "Properties"
-        self.tabBarController?.navigationItem.leftBarButtonItems = [btnSearch]
-        self.tabBarController?.navigationItem.rightBarButtonItems = [btnPay, btnAdd]
+        
         
     }
     
     override func initViews() {
+        
+        self.navigationItem.title = "Properties"
+        self.navigationItem.leftBarButtonItems = [btnSearch]
+        self.navigationItem.rightBarButtonItems = [btnPay, btnAdd]
+        
         propertiesTableView.dataSource = self
         propertiesTableView.delegate = self
 
         propertiesTableView.estimatedRowHeight = 44
         propertiesTableView.rowHeight = UITableViewAutomaticDimension
 
+        propertiesTableView.register(UINib(nibName: "ItemPropertiesViewCell", bundle: nil),
+                                     forCellReuseIdentifier: "cell")
     }
 }
 
 extension PropertiesViewController : UITableViewDelegate, UITableViewDataSource{
     
     func initData(){
-        let property1 = Property(image : "iv1",title: "145 Deveonshire Road", address: "01-01", agent: "Agent: Elaine Onge", cost: 1200000, square: "807 sqft", status: "Complete")
+        let property1 = Property(image : "iv1",
+                                 title: "145 Deveonshire Road",
+                                 address: "01-01",
+                                 agent: "Agent: Elaine Onge",
+                                 cost: 1200000,
+                                 square: "807 sqft",
+                                 status: "Complete")
         
         let property2 = Property(image : "iv2",title: "Hilbre 28", address: "65 Hillside Drive", agent: "Agent: Joanne Ang", cost: 899999, square: "924 sqft", status: "Complete")
         
@@ -54,11 +65,7 @@ extension PropertiesViewController : UITableViewDelegate, UITableViewDataSource{
         let property5 = Property(image : "iv2",title: "Hilbre 28", address: "65 Hillside Drive", agent: "Agent: Joanne Ang", cost: 899999, square: "924 sqft", status: "Complete")
         
         let property6 = Property(image : "iv3",title: "Onze @ Tanjong Pagar", address: "Onze @ Tanjong Pagar", agent: "Agent: Joanne Ang", cost: 1350000, square: "924 sqft", status: "Complete")
-        
-        
         properties = [property1, property2, property3, property4, property5, property6]
-        
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,20 +73,9 @@ extension PropertiesViewController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let itemPropertiesViewCell = Bundle.main.loadNibNamed("ItemPropertiesViewCell", owner: self, options: nil)?.first as! ItemPropertiesViewCell
-        let property = properties[indexPath.row]
-        
-        itemPropertiesViewCell.itemImageView.image = UIImage(named: property.image)
-        itemPropertiesViewCell.titleLabel.text = property.title
-        itemPropertiesViewCell.addressLabel.text = property.address
-        itemPropertiesViewCell.costLabel.text = String(format:"S$ %.f", property.cost)
-        itemPropertiesViewCell.agentLabel.text = property.agent
-        itemPropertiesViewCell.squareLabel.text = property.square
-        itemPropertiesViewCell.statusLabel.text = property.status
-        
-        
+        let itemPropertiesViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ItemPropertiesViewCell
+        let property = properties[indexPath.row]                
+        itemPropertiesViewCell.property = property
         return itemPropertiesViewCell
     }
-    
-    
 }
