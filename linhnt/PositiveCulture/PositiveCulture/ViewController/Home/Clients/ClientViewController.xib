@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClientViewController" customModule="PositiveCulture" customModuleProvider="target">
+            <connections>
+                <outlet property="clientTableView" destination="Py8-62-Squ" id="lTV-as-I1Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0L-cy-B4V">
+                    <rect key="frame" x="8" y="7" width="359" height="44"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DPu-ej-OFL"/>
+                    </constraints>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVk-KG-wTy">
+                    <rect key="frame" x="0.0" y="58" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="B33-wv-J1u"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jenny Wu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMd-Dl-fte">
+                    <rect key="frame" x="24" y="76" width="69.5" height="18"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G546556M - Pending Approval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBB-XE-Js3">
+                    <rect key="frame" x="24" y="95" width="194" height="16.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BbH-Bm-9hX">
+                    <rect key="frame" x="0.0" y="137.5" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="gd6-rY-C1i"/>
+                        <constraint firstAttribute="height" constant="1" id="urg-xS-rJN"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Py8-62-Squ">
+                    <rect key="frame" x="0.0" y="138.5" width="375" height="464.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H0L-cy-B4V" secondAttribute="trailing" constant="8" id="0S4-gJ-ZVZ"/>
+                <constraint firstItem="BbH-Bm-9hX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BJ9-C2-3Bf"/>
+                <constraint firstItem="tMd-Dl-fte" firstAttribute="top" secondItem="uVk-KG-wTy" secondAttribute="bottom" constant="17" id="H90-pN-T2u"/>
+                <constraint firstAttribute="trailing" secondItem="BbH-Bm-9hX" secondAttribute="trailing" id="Ooa-Qt-mY6"/>
+                <constraint firstItem="uVk-KG-wTy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OvQ-fM-iad"/>
+                <constraint firstItem="KBB-XE-Js3" firstAttribute="leading" secondItem="tMd-Dl-fte" secondAttribute="leading" id="Und-81-osa"/>
+                <constraint firstItem="KBB-XE-Js3" firstAttribute="top" secondItem="tMd-Dl-fte" secondAttribute="bottom" constant="1" id="YBA-tg-hMD"/>
+                <constraint firstItem="H0L-cy-B4V" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="7" id="aWP-9W-WIS"/>
+                <constraint firstItem="Py8-62-Squ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="anh-KF-RQq"/>
+                <constraint firstItem="BbH-Bm-9hX" firstAttribute="top" secondItem="KBB-XE-Js3" secondAttribute="bottom" constant="26" id="cWg-3f-tci"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Py8-62-Squ" secondAttribute="bottom" id="fFw-Dc-Rxd"/>
+                <constraint firstItem="Py8-62-Squ" firstAttribute="top" secondItem="BbH-Bm-9hX" secondAttribute="bottom" id="gby-9C-fpc"/>
+                <constraint firstItem="tMd-Dl-fte" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="hI9-Zq-aOQ"/>
+                <constraint firstItem="H0L-cy-B4V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="sV9-jh-jcO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Py8-62-Squ" secondAttribute="trailing" id="tZh-7X-VKP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uVk-KG-wTy" secondAttribute="trailing" id="z3k-Bw-EWN"/>
+                <constraint firstItem="uVk-KG-wTy" firstAttribute="top" secondItem="H0L-cy-B4V" secondAttribute="bottom" constant="7" id="zBG-dx-R5v"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
