@@ -1,3 +1,18 @@
-PODFILE CHECKSUM: 32851fc40bfcfcac548957cd24928c91c2efe563
+PODS:
+  - Alamofire (4.7.1)
+  - DateToolsSwift (4.0.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - DateToolsSwift
+  - SwiftyJSON (~> 4.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 625f21976fc2293075511870fb91e83f6a245b44
 
 COCOAPODS: 1.4.0

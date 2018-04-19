@@ -6,7 +6,9 @@ target 'HelloWorld' do
   use_frameworks!
 
   # Pods for HelloWorld
-
+  pod 'DateToolsSwift'
+  pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON', '~> 4.0'
   target 'HelloWorldTests' do
     inherit! :search_paths
     # Pods for testing

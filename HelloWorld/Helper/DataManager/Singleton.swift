@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 final class Singleton {
     //mark: Shared Instance
     static let sharedInstance = Singleton()

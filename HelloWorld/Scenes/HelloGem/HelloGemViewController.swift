@@ -9,7 +9,7 @@
 import UIKit
 
 protocol MyDelegate: NSObjectProtocol {
-    func onSubmit(name: String, from viewcontroller: UIViewController, sender: Any)
+    func onSubmit(_ viewcontroller: UIViewController, _ name: String)
 }
 
 class HelloGemViewController: UIViewController {
@@ -63,9 +63,9 @@ class HelloGemViewController: UIViewController {
         
         self.navigationController?.popViewController(animated: true)
         
-        delegate?.onSubmit(name: fullName, from: self, sender: sender)
+        delegate?.onSubmit(self, fullName)
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "onSubmitNotification"),
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "kNotificationOnSubmit"),
                                         object: nil,
                                         userInfo: ["name": fullName])
     }

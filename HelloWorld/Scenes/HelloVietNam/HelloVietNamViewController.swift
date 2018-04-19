@@ -39,7 +39,6 @@ class HelloVietNamViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewcontroller = storyboard.instantiateViewController(withIdentifier: "HelloGemViewController")
             as! HelloGemViewController
-        viewcontroller.comeFrom = "Viet Nam"
         viewcontroller.delegate = self
         self.navigationController?.pushViewController(viewcontroller, animated: true)
     }
@@ -56,7 +55,7 @@ class HelloVietNamViewController: UIViewController {
 }
 
 extension HelloVietNamViewController: MyDelegate {
-    func onSubmit(name: String, from viewcontroller: UIViewController, sender: Any) {
+    func onSubmit(_ viewcontroller: UIViewController, _ name: String) {
         print(name)
         nameLabel.text = name
     }
