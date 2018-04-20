@@ -21,7 +21,11 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func onClickLogin(_ sender: Any) {
+        let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homevc")
+        self.navigationController?.pushViewController(homeVC!, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

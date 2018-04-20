@@ -9,7 +9,7 @@
 import UIKit
 import Parchment
 
-class PropertiesViewCell: UIViewController {
+class PropertiesViewController: UIViewController {
 
     fileprivate let cities = [
         "Property",
@@ -54,7 +54,9 @@ extension PropertiesViewController: PagingViewControllerDataSource {
     }
     
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController {
-        return PropertiesViewController(title: cities[index])
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let propertiesViewController = storyboard.instantiateViewController(withIdentifier: "PropertiesChildView")
+        return propertiesViewController
     }
     
     func numberOfViewControllers<T>(in: PagingViewController<T>) -> Int {

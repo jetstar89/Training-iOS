@@ -6,6 +6,7 @@ target 'HelloWorld' do
   use_frameworks!
 
   # Pods for HelloWorld
+  pod 'Parchment'
 
   target 'HelloWorldTests' do
     inherit! :search_paths

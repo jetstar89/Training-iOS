@@ -10,6 +10,12 @@ import UIKit
 
 class PropertiesViewCell: UITableViewCell {
 
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var roadLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var agentLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var signatureLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
