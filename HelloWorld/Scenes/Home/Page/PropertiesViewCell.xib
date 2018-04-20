@@ -6,28 +6,29 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="propertiesCell" rowHeight="283" id="KGk-i7-Jjw" customClass="PropertiesViewCell" customModule="HelloWorld" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="361" height="283"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="propertiesCell" rowHeight="289" id="KGk-i7-Jjw" customClass="PropertiesViewCell" customModule="HelloWorld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="289"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="361" height="282.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="361" height="288.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="oez-dx-rNs">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="164"/>
+                        <rect key="frame" x="0.0" y="79" width="120" height="164"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="164" id="g10-5E-Fof"/>
                             <constraint firstAttribute="width" constant="120" id="pzh-4V-vKQ"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrA-OA-TlQ">
-                        <rect key="frame" x="120" y="0.0" width="241" height="164"/>
+                        <rect key="frame" x="120" y="16" width="241" height="227"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="145 Deveonshire Road" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS3-WB-bmT">
                                 <rect key="frame" x="16" y="16" width="209" height="24"/>
@@ -36,31 +37,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zG-X2-goQ">
-                                <rect key="frame" x="16" y="43" width="209" height="19.5"/>
+                                <rect key="frame" x="16" y="43" width="209" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.53924978595890416" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agent: Henery Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyQ-Pg-YFW">
-                                <rect key="frame" x="16" y="65.5" width="209" height="21"/>
+                                <rect key="frame" x="16" y="66" width="209" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.53924978595890416" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1,200,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keU-Sm-DhB">
-                                <rect key="frame" x="16" y="89.5" width="101" height="21"/>
+                                <rect key="frame" x="16" y="90" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.86590325342465757" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner Signature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="now-A4-k2z">
-                                <rect key="frame" x="16" y="113.5" width="101" height="14.5"/>
+                                <rect key="frame" x="16" y="114" width="101" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0039215686274509803" green="0.58039215686274503" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="807 sqft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M01-Yf-Jog">
-                                <rect key="frame" x="164" y="96.5" width="61" height="19.5"/>
+                                <rect key="frame" x="164" y="97" width="61" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.53924978595890416" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -73,6 +74,7 @@
                             <constraint firstAttribute="trailing" secondItem="oS3-WB-bmT" secondAttribute="trailing" constant="16" id="KwF-Yf-3ZU"/>
                             <constraint firstItem="keU-Sm-DhB" firstAttribute="top" secondItem="yyQ-Pg-YFW" secondAttribute="bottom" constant="3" id="P5D-Vb-tfi"/>
                             <constraint firstItem="9zG-X2-goQ" firstAttribute="leading" secondItem="oS3-WB-bmT" secondAttribute="leading" id="QD2-am-Mpw"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="now-A4-k2z" secondAttribute="bottom" constant="10" id="SoB-Jo-puv"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="keU-Sm-DhB" secondAttribute="trailing" constant="80" id="TpX-4R-KRN"/>
                             <constraint firstItem="now-A4-k2z" firstAttribute="trailing" secondItem="keU-Sm-DhB" secondAttribute="trailing" id="U6W-2g-Z5B"/>
                             <constraint firstItem="M01-Yf-Jog" firstAttribute="top" secondItem="yyQ-Pg-YFW" secondAttribute="bottom" constant="10" id="ZK6-do-HWb"/>
@@ -90,12 +92,16 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="vrA-OA-TlQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5If-Bo-wGJ"/>
+                    <constraint firstItem="vrA-OA-TlQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="5If-Bo-wGJ"/>
                     <constraint firstItem="oez-dx-rNs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="63E-7O-icx"/>
                     <constraint firstAttribute="trailing" secondItem="vrA-OA-TlQ" secondAttribute="trailing" id="BmQ-DX-kxi"/>
+                    <constraint firstItem="vrA-OA-TlQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="FmO-Pa-rhs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vrA-OA-TlQ" secondAttribute="bottom" constant="35" id="I5S-Xk-yNp"/>
+                    <constraint firstItem="vrA-OA-TlQ" firstAttribute="bottom" secondItem="oez-dx-rNs" secondAttribute="bottom" id="Ud7-bF-Jqn"/>
                     <constraint firstItem="vrA-OA-TlQ" firstAttribute="leading" secondItem="oez-dx-rNs" secondAttribute="trailing" id="evu-u0-cIV"/>
-                    <constraint firstItem="vrA-OA-TlQ" firstAttribute="bottom" secondItem="oez-dx-rNs" secondAttribute="bottom" id="fqp-bW-kDW"/>
-                    <constraint firstItem="oez-dx-rNs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ix1-h6-bVh"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oez-dx-rNs" secondAttribute="bottom" constant="16" id="g9l-7Z-oI4"/>
+                    <constraint firstItem="oez-dx-rNs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="ix1-h6-bVh"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vrA-OA-TlQ" secondAttribute="bottom" constant="16" id="kuA-2E-rfN"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -107,7 +113,7 @@
                 <outlet property="roadLabel" destination="oS3-WB-bmT" id="KeT-py-ERR"/>
                 <outlet property="signatureLabel" destination="now-A4-k2z" id="BhY-Ab-245"/>
             </connections>
-            <point key="canvasLocation" x="-68" y="140"/>
+            <point key="canvasLocation" x="-68.5" y="142.5"/>
         </tableViewCell>
     </objects>
     <resources>

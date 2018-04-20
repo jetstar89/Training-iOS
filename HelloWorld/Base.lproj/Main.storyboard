@@ -429,7 +429,7 @@
         <!--Properties-->
         <scene sceneID="PnC-00-kjb">
             <objects>
-                <viewController id="5bj-qm-RoE" customClass="PropertiesChildViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5bj-qm-RoE" customClass="PropertiesViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VbL-QJ-gHW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -442,10 +442,10 @@
             </objects>
             <point key="canvasLocation" x="3778" y="438"/>
         </scene>
-        <!--Properties Child View Controller-->
+        <!--View Controller-->
         <scene sceneID="2kV-cy-xmR">
             <objects>
-                <viewController storyboardIdentifier="PropertiesChildView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GbT-9R-Edk" customClass="PropertiesChildViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PropertiesChildView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GbT-9R-Edk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xC6-nH-lnX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,7 +465,7 @@
                         <viewLayoutGuide key="safeArea" id="tVE-bm-6E6"/>
                     </view>
                     <connections>
-                        <outlet property="propertiesTableView" destination="af8-Q3-9O7" id="YXj-z7-rGI"/>
+                        <outlet property="proTableView" destination="af8-Q3-9O7" id="Zzv-qj-pCH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzx-Rt-Ulh" userLabel="First Responder" sceneMemberID="firstResponder"/>

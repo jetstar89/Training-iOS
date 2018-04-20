@@ -54,9 +54,10 @@ extension PropertiesViewController: PagingViewControllerDataSource {
     }
     
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForIndex index: Int) -> UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let propertiesViewController = storyboard.instantiateViewController(withIdentifier: "PropertiesChildView")
-        return propertiesViewController
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let propertiesViewController = storyboard.instantiateViewController(withIdentifier: "PropertiesChildView")
+//        return propertiesViewController
+        return PropertyChildViewController(nibName: "PropertyChildViewController", bundle: nil)
     }
     
     func numberOfViewControllers<T>(in: PagingViewController<T>) -> Int {
