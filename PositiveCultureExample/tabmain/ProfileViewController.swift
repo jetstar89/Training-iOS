@@ -18,7 +18,9 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationItem.title = "Properties"
         self.navigationItem.leftBarButtonItems = [buttonSetting]
-        self.navigationItem.rightBarButtonItems = [buttonEdit]
+        
+        let settingBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "search"), style: .plain, target: self, action: #selector(setting(sender:)))
+        self.navigationItem.leftBarButtonItem = settingBarButton
         
     }
 

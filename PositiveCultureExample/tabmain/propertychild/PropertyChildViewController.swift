@@ -48,23 +48,15 @@ extension PropertyChildViewController : UITableViewDataSource {
         return 3;
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableProperty.dequeueReusableCell(withIdentifier: "PropertyTableViewCell")
         
         return cell!;
     }
-    
-    //func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {<#code#>
-    //}
-    
 }
 
 extension PropertyChildViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
+        // did select row
     }
 }
