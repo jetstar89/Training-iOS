@@ -1,15 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Of1-y5-wu3">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="fYI-j1-c1M">
+            <objects>
+                <viewController id="Of1-y5-wu3" customClass="LoginViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m2d-Nt-r1k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Acr-ah-muS">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gov-Qc-Grh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gem2017" translatesAutoresizingMaskIntoConstraints="NO" id="W7D-uE-2rJ">
+                                                <rect key="frame" x="116.66666666666669" y="70" width="181" height="61"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên đăng nhập" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbO-Al-Jj1">
+                                                <rect key="frame" x="46" y="231" width="322" height="17.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AHj-pl-3n7">
+                                                <rect key="frame" x="46" y="256.66666666666669" width="322" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="HkL-jv-Lbk"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.24705882352941178" green="0.37254901960784315" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2b-3p-9Oh">
+                                                <rect key="frame" x="46" y="313.66666666666669" width="322" height="17.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="******" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5RD-VH-Qc9">
+                                                <rect key="frame" x="46" y="339.33333333333331" width="322" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="6Qz-jX-JR6"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.24705882352941178" green="0.37254901960784315" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3F-hv-Int">
+                                                <rect key="frame" x="46" y="396.33333333333331" width="322" height="42"/>
+                                                <color key="backgroundColor" red="0.2470588235" green="0.37254901959999998" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="H37-bY-cdz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <state key="normal" title="ĐĂNG NHẬP"/>
+                                                <connections>
+                                                    <action selector="onLogin:" destination="Of1-y5-wu3" eventType="touchUpInside" id="snC-uU-070"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="S3F-hv-Int" firstAttribute="leading" secondItem="gov-Qc-Grh" secondAttribute="leading" constant="46" id="5U9-l1-Kiw"/>
+                                            <constraint firstItem="AHj-pl-3n7" firstAttribute="leading" secondItem="zbO-Al-Jj1" secondAttribute="leading" id="BF5-Ux-LBM"/>
+                                            <constraint firstItem="o2b-3p-9Oh" firstAttribute="top" secondItem="AHj-pl-3n7" secondAttribute="bottom" constant="15" id="Bqn-2i-dTk"/>
+                                            <constraint firstItem="W7D-uE-2rJ" firstAttribute="centerX" secondItem="gov-Qc-Grh" secondAttribute="centerX" id="CJk-ly-fEb"/>
+                                            <constraint firstItem="5RD-VH-Qc9" firstAttribute="leading" secondItem="zbO-Al-Jj1" secondAttribute="leading" id="FDN-v9-eqj"/>
+                                            <constraint firstItem="S3F-hv-Int" firstAttribute="trailing" secondItem="5RD-VH-Qc9" secondAttribute="trailing" id="Q6O-lJ-ZSP"/>
+                                            <constraint firstItem="o2b-3p-9Oh" firstAttribute="trailing" secondItem="zbO-Al-Jj1" secondAttribute="trailing" id="WAO-Ii-LX5"/>
+                                            <constraint firstItem="S3F-hv-Int" firstAttribute="top" secondItem="5RD-VH-Qc9" secondAttribute="bottom" constant="15" id="eML-Vb-Jjo"/>
+                                            <constraint firstItem="W7D-uE-2rJ" firstAttribute="top" secondItem="gov-Qc-Grh" secondAttribute="top" constant="70" id="gcU-dL-Y1x"/>
+                                            <constraint firstItem="zbO-Al-Jj1" firstAttribute="top" secondItem="W7D-uE-2rJ" secondAttribute="bottom" constant="100" id="hOJ-EI-kZt"/>
+                                            <constraint firstItem="5RD-VH-Qc9" firstAttribute="top" secondItem="o2b-3p-9Oh" secondAttribute="bottom" constant="8" id="heX-Um-Lot"/>
+                                            <constraint firstItem="o2b-3p-9Oh" firstAttribute="leading" secondItem="zbO-Al-Jj1" secondAttribute="leading" id="iKA-gQ-3Sk"/>
+                                            <constraint firstAttribute="trailing" secondItem="S3F-hv-Int" secondAttribute="trailing" constant="46" id="mpr-NE-jim"/>
+                                            <constraint firstItem="AHj-pl-3n7" firstAttribute="top" secondItem="zbO-Al-Jj1" secondAttribute="bottom" constant="8" id="uQA-o1-79O"/>
+                                            <constraint firstItem="5RD-VH-Qc9" firstAttribute="trailing" secondItem="zbO-Al-Jj1" secondAttribute="trailing" id="xEx-zK-raa"/>
+                                            <constraint firstItem="S3F-hv-Int" firstAttribute="leading" secondItem="5RD-VH-Qc9" secondAttribute="leading" id="xG3-Fu-d0U"/>
+                                            <constraint firstItem="AHj-pl-3n7" firstAttribute="trailing" secondItem="zbO-Al-Jj1" secondAttribute="trailing" id="zm7-8Z-p2G"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gov-Qc-Grh" firstAttribute="top" secondItem="Acr-ah-muS" secondAttribute="top" id="97Z-sZ-YgE"/>
+                                    <constraint firstAttribute="bottom" secondItem="gov-Qc-Grh" secondAttribute="bottom" id="VOf-J6-3Y4"/>
+                                    <constraint firstItem="gov-Qc-Grh" firstAttribute="leading" secondItem="Acr-ah-muS" secondAttribute="leading" id="g67-Oc-1hy"/>
+                                    <constraint firstItem="gov-Qc-Grh" firstAttribute="width" secondItem="Acr-ah-muS" secondAttribute="width" id="pSX-eR-Ym1"/>
+                                    <constraint firstAttribute="trailing" secondItem="gov-Qc-Grh" secondAttribute="trailing" id="pUH-v7-XKB"/>
+                                    <constraint firstItem="gov-Qc-Grh" firstAttribute="height" secondItem="Acr-ah-muS" secondAttribute="height" priority="250" id="tzM-PJ-Mqm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yr3-xB-vcC" firstAttribute="bottom" secondItem="Acr-ah-muS" secondAttribute="bottom" id="Anu-rg-3dk"/>
+                            <constraint firstItem="Acr-ah-muS" firstAttribute="leading" secondItem="yr3-xB-vcC" secondAttribute="leading" id="ELT-gh-PhH"/>
+                            <constraint firstItem="Acr-ah-muS" firstAttribute="top" secondItem="yr3-xB-vcC" secondAttribute="top" id="MQC-dE-mGa"/>
+                            <constraint firstItem="yr3-xB-vcC" firstAttribute="trailing" secondItem="Acr-ah-muS" secondAttribute="trailing" id="PQC-hy-v0c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yr3-xB-vcC"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="5RD-VH-Qc9" id="ENb-Pk-xBJ"/>
+                        <outlet property="usernameTextField" destination="AHj-pl-3n7" id="xnn-Wq-57M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMX-4S-7Ik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="-56"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="KCY-IA-3m7">
             <objects>
@@ -334,6 +450,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gem2017" width="181" height="61"/>
         <image name="image" width="1080" height="1022"/>
     </resources>
 </document>

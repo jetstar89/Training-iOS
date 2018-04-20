@@ -17,25 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         print("didFinishLaunchingWithOptions")
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
-        setupTabbarController()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        setupTabbarController()
         return true
     }
     
-    private func setupSingleView() {
+    func setupSingleView() {
         let viewcontroller = HelloWorldViewControler(nibName: "HelloWorldViewControler", bundle: nil)
         window?.rootViewController = viewcontroller
         window?.makeKeyAndVisible()
     }
     
-    private func setupNavigationController() {
+    func setupNavigationController() {
         let viewcontroller = HelloVietNamViewController(nibName: "HelloVietNamViewController", bundle: nil)
         let rootNavigationController = UINavigationController(rootViewController: viewcontroller)
         window?.rootViewController = rootNavigationController
         window?.makeKeyAndVisible()
     }
     
-    private func setupTabbarController() {
+    func setupTabbarController() {
         let helloVietNamViewController = HelloVietNamViewController(nibName: "HelloVietNamViewController", bundle: nil)
         let vietnamNavigationController = UINavigationController(rootViewController: helloVietNamViewController)
         helloVietNamViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)

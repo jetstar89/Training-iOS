@@ -6,7 +6,11 @@ target 'HelloWorld' do
   use_frameworks!
 
   # Pods for HelloWorld
-
+  pod 'TPKeyboardAvoiding'
+  pod 'Alamofire', '~> 4.3'
+  pod 'SwiftyJSON'
+  pod 'MBProgressHUD'
+  
   target 'HelloWorldTests' do
     inherit! :search_paths
     # Pods for testing

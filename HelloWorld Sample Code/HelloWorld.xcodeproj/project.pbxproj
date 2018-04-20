@@ -20,8 +20,13 @@
 		427532B4208609230089BA91 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427532B2208609230089BA91 /* MyTableViewCell.xib */; };
 		52A4E347547BF31547C6903D /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316FB5001C786BFD724AF8FC /* Pods_HelloWorld.framework */; };
 		574EEB8F393F8DE27F19C019 /* Pods_HelloWorldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAC37C6A27758C27036FD01 /* Pods_HelloWorldTests.framework */; };
+		AE171B3920899C8100A24327 /* APIServiceAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE171B3620899C8000A24327 /* APIServiceAgent.swift */; };
+		AE171B3A20899C8100A24327 /* APIRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE171B3720899C8000A24327 /* APIRequestProvider.swift */; };
+		AE171B3B20899C8100A24327 /* APIServiceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE171B3820899C8000A24327 /* APIServiceObject.swift */; };
+		AE171B3D20899E4700A24327 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE171B3C20899E4700A24327 /* UserServices.swift */; };
+		AE171B3F2089A01B00A24327 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE171B3E2089A01B00A24327 /* UIViewControllerExtension.swift */; };
 		AE224AD62084892700D85CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE224ACE2084892400D85CD2 /* AppDelegate.swift */; };
-		AE224AD72084892700D85CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE224ACF2084892500D85CD2 /* ViewController.swift */; };
+		AE224AD72084892700D85CD2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE224ACF2084892500D85CD2 /* LoginViewController.swift */; };
 		AEDE72B1207B12FD00771B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDE72AF207B12FD00771B25 /* Main.storyboard */; };
 		AEDE72B3207B12FD00771B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDE72B2207B12FD00771B25 /* Assets.xcassets */; };
 		AEDE72B6207B12FD00771B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDE72B4207B12FD00771B25 /* LaunchScreen.storyboard */; };
@@ -64,9 +69,14 @@
 		7D0715EB6E80AC315D31C510 /* Pods-HelloWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldTests/Pods-HelloWorldTests.release.xcconfig"; sourceTree = "<group>"; };
 		7EAC37C6A27758C27036FD01 /* Pods_HelloWorldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC4358D6ACD44B0DF95EC55 /* Pods_HelloWorldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE171B3620899C8000A24327 /* APIServiceAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceAgent.swift; sourceTree = "<group>"; };
+		AE171B3720899C8000A24327 /* APIRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestProvider.swift; sourceTree = "<group>"; };
+		AE171B3820899C8000A24327 /* APIServiceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceObject.swift; sourceTree = "<group>"; };
+		AE171B3C20899E4700A24327 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		AE171B3E2089A01B00A24327 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		AE224AC92084892000D85CD2 /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE224ACE2084892400D85CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE224ACF2084892500D85CD2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE224ACF2084892500D85CD2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AEDE72A8207B12FD00771B25 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDE72B0207B12FD00771B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEDE72B2207B12FD00771B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,6 +188,10 @@
 		427532922086048E0089BA91 /* APIServices */ = {
 			isa = PBXGroup;
 			children = (
+				AE171B3720899C8000A24327 /* APIRequestProvider.swift */,
+				AE171B3620899C8000A24327 /* APIServiceAgent.swift */,
+				AE171B3820899C8000A24327 /* APIServiceObject.swift */,
+				AE171B3C20899E4700A24327 /* UserServices.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -215,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				427532AB208606110089BA91 /* UIColorExtention.swift */,
+				AE171B3E2089A01B00A24327 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -322,7 +337,7 @@
 				4275328C208604430089BA91 /* BaseComponents */,
 				4275328B208604170089BA91 /* Scenes */,
 				AE224ACE2084892400D85CD2 /* AppDelegate.swift */,
-				AE224ACF2084892500D85CD2 /* ViewController.swift */,
+				AE224ACF2084892500D85CD2 /* LoginViewController.swift */,
 				AEDE72AF207B12FD00771B25 /* Main.storyboard */,
 				AEDE72B2207B12FD00771B25 /* Assets.xcassets */,
 				AEDE72B4207B12FD00771B25 /* LaunchScreen.storyboard */,
@@ -587,9 +602,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -655,13 +679,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				427532AA208605A60089BA91 /* Constant.swift in Sources */,
+				AE171B3A20899C8100A24327 /* APIRequestProvider.swift in Sources */,
+				AE171B3F2089A01B00A24327 /* UIViewControllerExtension.swift in Sources */,
+				AE171B3D20899E4700A24327 /* UserServices.swift in Sources */,
 				427532AF208606720089BA91 /* Singleton.swift in Sources */,
-				AE224AD72084892700D85CD2 /* ViewController.swift in Sources */,
+				AE224AD72084892700D85CD2 /* LoginViewController.swift in Sources */,
 				427532B3208609230089BA91 /* MyTableViewCell.swift in Sources */,
 				AE224AD62084892700D85CD2 /* AppDelegate.swift in Sources */,
+				AE171B3920899C8100A24327 /* APIServiceAgent.swift in Sources */,
 				427532A8208605580089BA91 /* HelloSingaporeViewController.swift in Sources */,
 				427532AC208606110089BA91 /* UIColorExtention.swift in Sources */,
 				427532A12086054D0089BA91 /* HelloVietNamViewController.swift in Sources */,
+				AE171B3B20899C8100A24327 /* APIServiceObject.swift in Sources */,
 				427532A6208605530089BA91 /* HelloWorldViewControler.swift in Sources */,
 				4275329E208605480089BA91 /* HelloGemViewController.swift in Sources */,
 			);
