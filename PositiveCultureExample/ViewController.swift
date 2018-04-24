@@ -18,10 +18,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "showProperties" {
+            if labelUser.text?.isEmpty == false && labelPass.text?.isEmpty == false {
+                return true
+            }
+        }
+        return false
+    }
     
     @IBAction func onBtnLogin(_ sender: Any) {
-        var name = labelUser.text;
-        var pass = labelPass.text;
+//        var name = labelUser.text;
+//        var pass = labelPass.text;
     }
     
     override func didReceiveMemoryWarning() {

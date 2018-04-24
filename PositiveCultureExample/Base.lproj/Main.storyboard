@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,7 +68,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onBtnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GiL-H0-aiz"/>
-                                    <segue destination="w0q-sf-FaL" kind="showDetail" id="iz5-8h-ndK"/>
+                                    <segue destination="w0q-sf-FaL" kind="show" identifier="showProperties" id="Yf5-e4-iOT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXb-wR-wLw">
@@ -110,8 +110,8 @@
         <!--Properties-->
         <scene sceneID="i7P-XC-zI8">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="propertiesID" storyboardName="Properties" id="w0q-sf-FaL" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFD-nn-AmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="propertiesID" storyboardName="Properties" id="w0q-sf-FaL" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="785" y="-102"/>
         </scene>
