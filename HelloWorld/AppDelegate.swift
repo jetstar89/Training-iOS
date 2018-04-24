@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+    var rootNavigationController: UINavigationController?
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 //        print("didFinishLaunchingWithOptions")
@@ -22,20 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    private func setupSingleView() {
+    func setupSingleView() {
         let viewcontroller = HelloWorldViewControler(nibName: "HelloWorldViewControler", bundle: nil)
         window?.rootViewController = viewcontroller
         window?.makeKeyAndVisible()
     }
     
-    private func setupNavigationController() {
+    func setupNavigationController() {
         let viewcontroller = HelloVietNamViewController(nibName: "HelloVietNamViewController", bundle: nil)
         let rootNavigationController = UINavigationController(rootViewController: viewcontroller)
         window?.rootViewController = rootNavigationController
         window?.makeKeyAndVisible()
     }
     
-    private func setupTabbarController() {
+    func setupTabbarController() {
         let helloVietNamViewController = HelloVietNamViewController(nibName: "HelloVietNamViewController", bundle: nil)
         let vietnamNavigationController = UINavigationController(rootViewController: helloVietNamViewController)
         helloVietNamViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)

@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func onClickLogin(_ sender: Any) {
         let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homevc")
-        self.navigationController?.pushViewController(homeVC!, animated: true)
+        (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = homeVC
     }
     
     /*

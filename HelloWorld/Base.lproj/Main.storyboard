@@ -426,26 +426,44 @@
             </objects>
             <point key="canvasLocation" x="3778" y="1097"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="MNY-LR-pxi">
+            <objects>
+                <navigationController id="tnL-dQ-t7P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZaR-B4-jRD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="G24-QY-Uby">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5bj-qm-RoE" kind="relationship" relationship="rootViewController" id="rIl-hb-l3M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="us3-Q1-T0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3558" y="413"/>
+        </scene>
         <!--Properties-->
         <scene sceneID="PnC-00-kjb">
             <objects>
                 <viewController id="5bj-qm-RoE" customClass="PropertiesViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VbL-QJ-gHW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TsQ-fm-qG7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Properties" selectedImage="properties" id="z45-w5-ad2"/>
+                    <navigationItem key="navigationItem" id="WY9-Od-Alh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIH-9Z-Gfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3778" y="438"/>
+            <point key="canvasLocation" x="4319" y="424"/>
         </scene>
-        <!--View Controller-->
+        <!--Property Child View Controller-->
         <scene sceneID="2kV-cy-xmR">
             <objects>
-                <viewController storyboardIdentifier="PropertiesChildView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GbT-9R-Edk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PropertiesChildView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GbT-9R-Edk" customClass="PropertyChildViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xC6-nH-lnX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,12 +483,12 @@
                         <viewLayoutGuide key="safeArea" id="tVE-bm-6E6"/>
                     </view>
                     <connections>
-                        <outlet property="proTableView" destination="af8-Q3-9O7" id="Zzv-qj-pCH"/>
+                        <outlet property="properyTableView" destination="af8-Q3-9O7" id="hEW-cb-l1m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzx-Rt-Ulh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4599" y="437"/>
+            <point key="canvasLocation" x="5009" y="424"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="uWG-I1-RTR">
@@ -482,9 +500,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="5bj-qm-RoE" kind="relationship" relationship="viewControllers" id="9r8-yZ-03q"/>
                         <segue destination="78B-T9-yzf" kind="relationship" relationship="viewControllers" id="5cx-4O-Zhl"/>
                         <segue destination="9q0-Qn-AGr" kind="relationship" relationship="viewControllers" id="KOc-fO-oD7"/>
+                        <segue destination="tnL-dQ-t7P" kind="relationship" relationship="viewControllers" id="nIu-rA-vBL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aF2-Vr-hAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
