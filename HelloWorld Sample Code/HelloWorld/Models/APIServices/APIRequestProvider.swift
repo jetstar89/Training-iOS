@@ -31,7 +31,7 @@ class APIRequestProvider: NSObject {
             let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
             let deviceOS = "ios"
             
-            let headers: HTTPHeaders = [
+            var headers: HTTPHeaders = [
                 "Accept": "application/json",
                 "Content-Type": "application/json",
                 kClientVersionHeaderField: version,

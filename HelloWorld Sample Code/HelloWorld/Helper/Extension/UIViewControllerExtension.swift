@@ -47,8 +47,8 @@ extension UIViewController {
     func showHud() {
         MBProgressHUD.hide(for: view, animated: true)
         MBProgressHUD.showAdded(to: view, animated: true)
-        
     }
+    
     func hideHude() {
         MBProgressHUD.hide(for: view, animated: true)
     }
