@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BA9BA7120917DD8008C5F1E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9BA6F20917DD8008C5F1E /* HomeViewController.swift */; };
+		4BA9BA7220917DD8008C5F1E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA9BA7020917DD8008C5F1E /* HomeViewController.xib */; };
+		4BA9BA7620917E6B008C5F1E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9BA7420917E6A008C5F1E /* ChangePasswordViewController.swift */; };
+		4BA9BA7720917E6B008C5F1E /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA9BA7520917E6A008C5F1E /* ChangePasswordViewController.xib */; };
+		4BA9BA7B20917E7D008C5F1E /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9BA7920917E7D008C5F1E /* ForgotPassViewController.swift */; };
+		4BA9BA7C20917E7D008C5F1E /* ForgotPassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA9BA7A20917E7D008C5F1E /* ForgotPassViewController.xib */; };
+		4BC3717A20916B7A00736BA3 /* APIServiceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3717620916B7A00736BA3 /* APIServiceObject.swift */; };
+		4BC3717B20916B7A00736BA3 /* APIRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3717720916B7A00736BA3 /* APIRequestProvider.swift */; };
+		4BC3717C20916B7A00736BA3 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3717820916B7A00736BA3 /* UserServices.swift */; };
+		4BC3717D20916B7A00736BA3 /* APIServiceAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3717920916B7A00736BA3 /* APIServiceAgent.swift */; };
+		4BFE630C208ECFEF003E18E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE630B208ECFEF003E18E5 /* AppDelegate.swift */; };
+		4BFE6313208ECFEF003E18E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFE6312208ECFEF003E18E5 /* Assets.xcassets */; };
+		4BFE6316208ECFEF003E18E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFE6314208ECFEF003E18E5 /* LaunchScreen.storyboard */; };
+		4BFE6327208ED299003E18E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE6325208ED299003E18E5 /* LoginViewController.swift */; };
+		4BFE6328208ED299003E18E5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BFE6326208ED299003E18E5 /* LoginViewController.xib */; };
+		4BFE632C208ED69E003E18E5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFE632B208ED69E003E18E5 /* Roboto-Regular.ttf */; };
+		4BFE6330208EDFB6003E18E5 /* ColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE632D208EDFB6003E18E5 /* ColorProvider.swift */; };
+		4BFE6331208EDFB6003E18E5 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE632E208EDFB6003E18E5 /* BaseNavViewController.swift */; };
+		4BFE6332208EDFB6003E18E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFE632F208EDFB6003E18E5 /* BaseViewController.swift */; };
+		B012F6648CE4FFCE9138C556 /* Pods_GemTimeKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21232F6B6507F944F7975441 /* Pods_GemTimeKeeper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21232F6B6507F944F7975441 /* Pods_GemTimeKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemTimeKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA9BA6F20917DD8008C5F1E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4BA9BA7020917DD8008C5F1E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4BA9BA7420917E6A008C5F1E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		4BA9BA7520917E6A008C5F1E /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		4BA9BA7920917E7D008C5F1E /* ForgotPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		4BA9BA7A20917E7D008C5F1E /* ForgotPassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPassViewController.xib; sourceTree = "<group>"; };
+		4BC3717620916B7A00736BA3 /* APIServiceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceObject.swift; sourceTree = "<group>"; };
+		4BC3717720916B7A00736BA3 /* APIRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestProvider.swift; sourceTree = "<group>"; };
+		4BC3717820916B7A00736BA3 /* UserServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		4BC3717920916B7A00736BA3 /* APIServiceAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceAgent.swift; sourceTree = "<group>"; };
+		4BFE6308208ECFEF003E18E5 /* GemTimeKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemTimeKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFE630B208ECFEF003E18E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BFE6312208ECFEF003E18E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BFE6315208ECFEF003E18E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BFE6317208ECFEF003E18E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BFE6325208ED299003E18E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4BFE6326208ED299003E18E5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4BFE632B208ED69E003E18E5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4BFE632D208EDFB6003E18E5 /* ColorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorProvider.swift; sourceTree = "<group>"; };
+		4BFE632E208EDFB6003E18E5 /* BaseNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
+		4BFE632F208EDFB6003E18E5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5D505B503269A3B0BC6A7F33 /* Pods-GemTimeKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemTimeKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-GemTimeKeeper/Pods-GemTimeKeeper.release.xcconfig"; sourceTree = "<group>"; };
+		67C92B571B8005BCD87416C3 /* Pods-GemTimeKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemTimeKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GemTimeKeeper/Pods-GemTimeKeeper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BFE6305208ECFEF003E18E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012F6648CE4FFCE9138C556 /* Pods_GemTimeKeeper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BA9BA6E20917DC1008C5F1E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4BA9BA6F20917DD8008C5F1E /* HomeViewController.swift */,
+				4BA9BA7020917DD8008C5F1E /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4BA9BA7320917E6A008C5F1E /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				4BA9BA7420917E6A008C5F1E /* ChangePasswordViewController.swift */,
+				4BA9BA7520917E6A008C5F1E /* ChangePasswordViewController.xib */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		4BA9BA7820917E7D008C5F1E /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				4BA9BA7920917E7D008C5F1E /* ForgotPassViewController.swift */,
+				4BA9BA7A20917E7D008C5F1E /* ForgotPassViewController.xib */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		4BFE62FF208ECFEF003E18E5 = {
+			isa = PBXGroup;
+			children = (
+				4BFE630A208ECFEF003E18E5 /* GemTimeKeeper */,
+				4BFE6309208ECFEF003E18E5 /* Products */,
+				64D33C702DB12BC3A8998DB5 /* Pods */,
+				B5FB782CFE43CB47660BFFBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BFE6309208ECFEF003E18E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BFE6308208ECFEF003E18E5 /* GemTimeKeeper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BFE630A208ECFEF003E18E5 /* GemTimeKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				4BFE6317208ECFEF003E18E5 /* Info.plist */,
+				4BFE630B208ECFEF003E18E5 /* AppDelegate.swift */,
+				4BFE6312208ECFEF003E18E5 /* Assets.xcassets */,
+				4BFE631E208ED1ED003E18E5 /* BaseComponents */,
+				4BFE6314208ECFEF003E18E5 /* LaunchScreen.storyboard */,
+				4BFE631F208ED21C003E18E5 /* Models */,
+				4BFE6329208ED664003E18E5 /* Resources */,
+				4BFE631D208ED1D0003E18E5 /* Scenes */,
+			);
+			path = GemTimeKeeper;
+			sourceTree = "<group>";
+		};
+		4BFE631D208ED1D0003E18E5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4BA9BA6E20917DC1008C5F1E /* Home */,
+				4BFE6323208ED268003E18E5 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4BFE631E208ED1ED003E18E5 /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4BFE632E208EDFB6003E18E5 /* BaseNavViewController.swift */,
+				4BFE632F208EDFB6003E18E5 /* BaseViewController.swift */,
+				4BFE632D208EDFB6003E18E5 /* ColorProvider.swift */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		4BFE631F208ED21C003E18E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BFE6322208ED25B003E18E5 /* DTOs */,
+				4BFE6321208ED24C003E18E5 /* Models */,
+				4BFE6320208ED238003E18E5 /* APIServices */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BFE6320208ED238003E18E5 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				4BC3717720916B7A00736BA3 /* APIRequestProvider.swift */,
+				4BC3717920916B7A00736BA3 /* APIServiceAgent.swift */,
+				4BC3717620916B7A00736BA3 /* APIServiceObject.swift */,
+				4BC3717820916B7A00736BA3 /* UserServices.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		4BFE6321208ED24C003E18E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BFE6322208ED25B003E18E5 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		4BFE6323208ED268003E18E5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4BA9BA7320917E6A008C5F1E /* ChangePassword */,
+				4BA9BA7820917E7D008C5F1E /* ForgotPassword */,
+				4BFE6325208ED299003E18E5 /* LoginViewController.swift */,
+				4BFE6326208ED299003E18E5 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4BFE6329208ED664003E18E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BFE632A208ED66E003E18E5 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BFE632A208ED66E003E18E5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4BFE632B208ED69E003E18E5 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		64D33C702DB12BC3A8998DB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67C92B571B8005BCD87416C3 /* Pods-GemTimeKeeper.debug.xcconfig */,
+				5D505B503269A3B0BC6A7F33 /* Pods-GemTimeKeeper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5FB782CFE43CB47660BFFBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21232F6B6507F944F7975441 /* Pods_GemTimeKeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BFE6307208ECFEF003E18E5 /* GemTimeKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BFE631A208ECFEF003E18E5 /* Build configuration list for PBXNativeTarget "GemTimeKeeper" */;
+			buildPhases = (
+				42514EECC0AD8058F5059172 /* [CP] Check Pods Manifest.lock */,
+				4BFE6304208ECFEF003E18E5 /* Sources */,
+				4BFE6305208ECFEF003E18E5 /* Frameworks */,
+				4BFE6306208ECFEF003E18E5 /* Resources */,
+				4727C8C7BF9416212002E58A /* [CP] Embed Pods Frameworks */,
+				23C331F34CAA745880FBB735 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GemTimeKeeper;
+			productName = GemTimeKeeper;
+			productReference = 4BFE6308208ECFEF003E18E5 /* GemTimeKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BFE6300208ECFEF003E18E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = kemshiro;
+				TargetAttributes = {
+					4BFE6307208ECFEF003E18E5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4BFE6303208ECFEF003E18E5 /* Build configuration list for PBXProject "GemTimeKeeper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BFE62FF208ECFEF003E18E5;
+			productRefGroup = 4BFE6309208ECFEF003E18E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BFE6307208ECFEF003E18E5 /* GemTimeKeeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BFE6306208ECFEF003E18E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA9BA7C20917E7D008C5F1E /* ForgotPassViewController.xib in Resources */,
+				4BFE6316208ECFEF003E18E5 /* LaunchScreen.storyboard in Resources */,
+				4BFE6313208ECFEF003E18E5 /* Assets.xcassets in Resources */,
+				4BA9BA7220917DD8008C5F1E /* HomeViewController.xib in Resources */,
+				4BFE632C208ED69E003E18E5 /* Roboto-Regular.ttf in Resources */,
+				4BA9BA7720917E6B008C5F1E /* ChangePasswordViewController.xib in Resources */,
+				4BFE6328208ED299003E18E5 /* LoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23C331F34CAA745880FBB735 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GemTimeKeeper/Pods-GemTimeKeeper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42514EECC0AD8058F5059172 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GemTimeKeeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4727C8C7BF9416212002E58A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GemTimeKeeper/Pods-GemTimeKeeper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GemTimeKeeper/Pods-GemTimeKeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BFE6304208ECFEF003E18E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA9BA7620917E6B008C5F1E /* ChangePasswordViewController.swift in Sources */,
+				4BC3717C20916B7A00736BA3 /* UserServices.swift in Sources */,
+				4BFE6332208EDFB6003E18E5 /* BaseViewController.swift in Sources */,
+				4BFE6330208EDFB6003E18E5 /* ColorProvider.swift in Sources */,
+				4BC3717B20916B7A00736BA3 /* APIRequestProvider.swift in Sources */,
+				4BC3717D20916B7A00736BA3 /* APIServiceAgent.swift in Sources */,
+				4BA9BA7120917DD8008C5F1E /* HomeViewController.swift in Sources */,
+				4BFE6331208EDFB6003E18E5 /* BaseNavViewController.swift in Sources */,
+				4BA9BA7B20917E7D008C5F1E /* ForgotPassViewController.swift in Sources */,
+				4BFE6327208ED299003E18E5 /* LoginViewController.swift in Sources */,
+				4BFE630C208ECFEF003E18E5 /* AppDelegate.swift in Sources */,
+				4BC3717A20916B7A00736BA3 /* APIServiceObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4BFE6314208ECFEF003E18E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BFE6315208ECFEF003E18E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BFE6318208ECFEF003E18E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BFE6319208ECFEF003E18E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BFE631B208ECFEF003E18E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C92B571B8005BCD87416C3 /* Pods-GemTimeKeeper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GemTimeKeeper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kemshiro.GemTimeKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4BFE631C208ECFEF003E18E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D505B503269A3B0BC6A7F33 /* Pods-GemTimeKeeper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GemTimeKeeper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kemshiro.GemTimeKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BFE6303208ECFEF003E18E5 /* Build configuration list for PBXProject "GemTimeKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BFE6318208ECFEF003E18E5 /* Debug */,
+				4BFE6319208ECFEF003E18E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BFE631A208ECFEF003E18E5 /* Build configuration list for PBXNativeTarget "GemTimeKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BFE631B208ECFEF003E18E5 /* Debug */,
+				4BFE631C208ECFEF003E18E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BFE6300208ECFEF003E18E5 /* Project object */;
+}
