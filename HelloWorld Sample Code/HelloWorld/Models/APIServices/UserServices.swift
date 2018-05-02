@@ -17,7 +17,8 @@ class UserServices: APIServiceObject {
             if let err = error {
                 completion(Result.failure(err))
             } else {
-                completion(Result.success(json))
+                let employee = EmployeeDTO(json!)
+                completion(Result.success(employee))
             }
         }
     }

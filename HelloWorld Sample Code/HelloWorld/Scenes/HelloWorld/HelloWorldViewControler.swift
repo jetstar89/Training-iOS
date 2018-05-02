@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import CoreLocation
 
 class HelloWorldViewControler: UIViewController {
 
-    var y = 20
-    var x = 20
+    let locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
                                                                 target: self,
                                                                 action: #selector(onDismiss(_:)))
-        print(x)
+        
+        locationManager.delegate = self        
+        locationManager.startUpdatingLocation()
+        
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        
+        present(picker, animated: true, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -49,5 +58,24 @@ class HelloWorldViewControler: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+}
+
+extension HelloWorldViewControler: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print(locations)
+        manager.stopUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription)
+    }
+}
+
+extension HelloWorldViewControler: UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        let image = info["UIImagePickerControllerEditedImage"] as! UIImage
     }
 }

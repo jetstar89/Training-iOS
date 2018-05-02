@@ -33,7 +33,10 @@ class LoginViewController: UIViewController {
             switch result {
             case .success(let response):
                 print(response)
-                Constant.appDelegate.setupTabbarController()
+                if let employee = response as? EmployeeDTO {
+                    Constant.appDelegate.setupTabbarController()
+                    print(employee.full_name)
+                }
             case .failure(let error):
                 self.alertWithTitle("Login failed", message: error.localizedDescription)
             }

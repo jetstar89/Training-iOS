@@ -39,8 +39,17 @@ class APIServiceAgent: NSObject {
                 case .success:
                     if let responseData = response.result.value {
                         let json            = JSON(responseData)
+                        let error = json["is_error"].boolValue
+                        let message = json["message_code"]
+                        let statusCode = json["status_code"].intValue
                         print(json)
-                        completion(json, nil)
+                        if error {
+                            completion(JSON.null, NSError(domain: "",
+                                                          code: statusCode,
+                                                          userInfo: [NSLocalizedDescriptionKey: message]))
+                        } else {
+                            completion(json["data"], nil)
+                        }
                     }
                 case .failure(let error as NSError):                    
                     completion(JSON.null, error)
