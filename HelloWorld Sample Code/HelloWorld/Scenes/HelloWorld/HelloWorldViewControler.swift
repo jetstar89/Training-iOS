@@ -25,7 +25,7 @@ class HelloWorldViewControler: UIViewController {
         let picker = UIImagePickerController()
         picker.allowsEditing = true
         picker.sourceType = .photoLibrary
-        picker.delegate = self
+        picker.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
         
         present(picker, animated: true, completion: nil)
     }

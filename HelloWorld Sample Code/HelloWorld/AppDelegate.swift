@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         print("didFinishLaunchingWithOptions")
         // Override point for customization after application launch.
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        setupTabbarController()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        setupTabbarController()
         
         UserDefaults.standard.set("object", forKey: "kUserName")
         UserDefaults.standard.synchronize()
