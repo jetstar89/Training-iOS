@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotPassViewController" customModule="GemTimeKeeper" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLine" destination="DQ7-QV-POS" id="Ldu-bb-kLC"/>
+                <outlet property="emailTextField" destination="xYc-Wx-ikq" id="Rpf-8E-MWB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IcSend" translatesAutoresizingMaskIntoConstraints="NO" id="SkL-K7-hVy">
+                    <rect key="frame" x="137.5" y="41" width="99" height="99"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="99" id="U8u-Gm-6lj"/>
+                        <constraint firstAttribute="width" secondItem="SkL-K7-hVy" secondAttribute="height" multiplier="1:1" id="bGw-hJ-fWG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHt-Sz-Eqo" userLabel="lbEmail">
+                    <rect key="frame" x="28" y="205" width="50" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="IBo-wg-zRf"/>
+                        <constraint firstAttribute="height" constant="21" id="VIm-LE-2Zd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="xYc-Wx-ikq" userLabel="tfEmail">
+                    <rect key="frame" x="28" y="235" width="319" height="19"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="email"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wo-4p-Ul8" userLabel="btnSendRequest">
+                    <rect key="frame" x="28" y="282" width="319" height="42"/>
+                    <color key="backgroundColor" red="0.2470588235" green="0.37254901959999998" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Rux-2c-j1T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                    <state key="normal" title="Gửi yêu cầu">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSendRequestClick:" destination="-1" eventType="touchUpInside" id="gHh-QI-Jga"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DQ7-QV-POS">
+                    <rect key="frame" x="28" y="256" width="319" height="1"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qFD-ek-YJP"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2wo-4p-Ul8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="25A-aH-k8f"/>
+                <constraint firstItem="SkL-K7-hVy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7SD-o1-nEO"/>
+                <constraint firstItem="DQ7-QV-POS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="8l5-dz-2e8"/>
+                <constraint firstItem="pHt-Sz-Eqo" firstAttribute="top" secondItem="SkL-K7-hVy" secondAttribute="bottom" constant="65" id="OCW-ng-G1g"/>
+                <constraint firstItem="pHt-Sz-Eqo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="Qwd-6o-MdP"/>
+                <constraint firstItem="xYc-Wx-ikq" firstAttribute="top" secondItem="pHt-Sz-Eqo" secondAttribute="bottom" constant="9" id="Tfb-0S-QDF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xYc-Wx-ikq" secondAttribute="trailing" constant="28" id="bXT-RS-SQs"/>
+                <constraint firstItem="2wo-4p-Ul8" firstAttribute="top" secondItem="xYc-Wx-ikq" secondAttribute="bottom" constant="28" id="cfD-9S-B3b"/>
+                <constraint firstItem="DQ7-QV-POS" firstAttribute="leading" secondItem="xYc-Wx-ikq" secondAttribute="leading" id="hRZ-5F-dxx"/>
+                <constraint firstItem="SkL-K7-hVy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="41" id="izu-2v-Keg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2wo-4p-Ul8" secondAttribute="trailing" constant="28" id="jNb-Wh-Jhd"/>
+                <constraint firstItem="DQ7-QV-POS" firstAttribute="top" secondItem="xYc-Wx-ikq" secondAttribute="bottom" constant="2" id="kbJ-CI-tWi"/>
+                <constraint firstItem="xYc-Wx-ikq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="kha-j5-akJ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IcSend" width="99" height="99"/>
+    </resources>
+</document>
