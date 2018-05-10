@@ -26,7 +26,8 @@
 		DF7F4132209A0DC6009E6BF9 /* APIServiceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F4125209A0DC6009E6BF9 /* APIServiceObject.swift */; };
 		DF7F4133209A0DC6009E6BF9 /* APIRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F4126209A0DC6009E6BF9 /* APIRequestProvider.swift */; };
 		DFE1794B209FF3DA0061279B /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1794A209FF3D90061279B /* ExampleData.swift */; };
-		DFE1794D209FF4380061279B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1794C209FF4380061279B /* CustomCell.swift */; };
+		DFE1794D209FF4380061279B /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE1794C209FF4380061279B /* HomeCell.swift */; };
+		DFE1794F20A012650061279B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE1794E20A012650061279B /* HomeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +54,8 @@
 		DF7F4125209A0DC6009E6BF9 /* APIServiceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceObject.swift; sourceTree = "<group>"; };
 		DF7F4126209A0DC6009E6BF9 /* APIRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestProvider.swift; sourceTree = "<group>"; };
 		DFE1794A209FF3D90061279B /* ExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
-		DFE1794C209FF4380061279B /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		DFE1794C209FF4380061279B /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		DFE1794E20A012650061279B /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				DF7F4117209A0DC6009E6BF9 /* HomeViewController.swift */,
-				DFE1794C209FF4380061279B /* CustomCell.swift */,
+				DFE1794C209FF4380061279B /* HomeCell.swift */,
 				DFE1794A209FF3D90061279B /* ExampleData.swift */,
+				DFE1794E20A012650061279B /* HomeCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				AEF37F1D208994FC003E60D6 /* LaunchScreen.storyboard in Resources */,
 				AEF37F1A208994FC003E60D6 /* Assets.xcassets in Resources */,
 				DF7F4127209A0DC6009E6BF9 /* Roboto-Regular.ttf in Resources */,
+				DFE1794F20A012650061279B /* HomeCell.xib in Resources */,
 				AEF37F18208994FC003E60D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +358,7 @@
 				DF7F412C209A0DC6009E6BF9 /* ChangePasswordViewController.swift in Sources */,
 				DF7F4133209A0DC6009E6BF9 /* APIRequestProvider.swift in Sources */,
 				DF7F4129209A0DC6009E6BF9 /* HomeViewController.swift in Sources */,
-				DFE1794D209FF4380061279B /* CustomCell.swift in Sources */,
+				DFE1794D209FF4380061279B /* HomeCell.swift in Sources */,
 				DF7F4130209A0DC6009E6BF9 /* APIServiceAgent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
