@@ -138,9 +138,10 @@
 		4275328B208604170089BA91 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				AE530F8021018054006266E3 /* Authentication */,
+				4275329A2086050B0089BA91 /* HelloWorld */,
 				4275329C208605310089BA91 /* HelloGem */,
 				4275329B208605150089BA91 /* HelloVietNam */,
-				4275329A2086050B0089BA91 /* HelloWorld */,
 				42753299208604E00089BA91 /* HelloSingapore */,
 			);
 			path = Scenes;
@@ -312,6 +313,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AE530F8021018054006266E3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AE224ACF2084892500D85CD2 /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		AEDE729F207B12FD00771B25 = {
 			isa = PBXGroup;
 			children = (
@@ -343,7 +352,6 @@
 				4275328C208604430089BA91 /* BaseComponents */,
 				4275328B208604170089BA91 /* Scenes */,
 				AE224ACE2084892400D85CD2 /* AppDelegate.swift */,
-				AE224ACF2084892500D85CD2 /* LoginViewController.swift */,
 				AEDE72AF207B12FD00771B25 /* Main.storyboard */,
 				AEDE72B2207B12FD00771B25 /* Assets.xcassets */,
 				AEDE72B4207B12FD00771B25 /* LaunchScreen.storyboard */,
@@ -791,7 +799,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 65MUWGJ9FF;
 				INFOPLIST_FILE = HelloWorld/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gem.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -813,7 +821,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HelloWorld/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gem.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
