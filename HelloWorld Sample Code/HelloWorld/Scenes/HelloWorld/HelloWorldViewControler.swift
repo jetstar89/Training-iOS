@@ -37,6 +37,12 @@ class HelloWorldViewControler: UIViewController {
         print("viewDidDisappear")
     }
     
+    func openBookDetails(_ bookId: Int) {
+        let viewcontroller = BookDetailsViewController(nibName: "BookDetailsViewController", bundle: nil)
+        viewcontroller.bookId = bookId
+        self.navigationController?.pushViewController(viewcontroller, animated: true)
+    }
+    
     deinit {
         print("deinit")
     }

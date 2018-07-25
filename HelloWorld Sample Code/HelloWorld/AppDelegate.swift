@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         print("didFinishLaunchingWithOptions")
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
-        setupSingleView()
-                
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        setupSingleView()
+        setupDefaultAppearance()
         return true
     }
     
@@ -37,20 +37,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupTabbarController() {
-        let helloVietNamViewController = HelloVietNamViewController(nibName: "HelloVietNamViewController", bundle: nil)
-        let vietnamNavigationController = UINavigationController(rootViewController: helloVietNamViewController)
-        helloVietNamViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
+//        let helloVietNamViewController = HelloVietNamViewController(nibName: "HelloVietNamViewController", bundle: nil)
+//        let vietnamNavigationController = UINavigationController(rootViewController: helloVietNamViewController)
+//        helloVietNamViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
+//
+//        let helloSingaporeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelloSingaporeViewController")
+//        let singaporeNavigationController = UINavigationController(rootViewController: helloSingaporeViewController)
+//        helloSingaporeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+//
+//        let rootTabbarController = UITabBarController()
+//        rootTabbarController.viewControllers = [vietnamNavigationController, singaporeNavigationController]
         
-        let helloSingaporeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelloSingaporeViewController")
-        let singaporeNavigationController = UINavigationController(rootViewController: helloSingaporeViewController)
-        helloSingaporeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
-        
-        let rootTabbarController = UITabBarController()
-        rootTabbarController.viewControllers = [vietnamNavigationController, singaporeNavigationController]
-        
+        let rootTabbarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "rootTabbarController")
         window?.rootViewController = rootTabbarController
         window?.makeKeyAndVisible()
         
+    }        
+    
+    func setupDefaultAppearance() {
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barTintColor = UIColor.red
+//        UIBarButtonItem.appearance().setTitleTextAttributes([n], for: <#T##UIControlState#>)
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

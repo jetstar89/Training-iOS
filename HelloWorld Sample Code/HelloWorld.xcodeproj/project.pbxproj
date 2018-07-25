@@ -29,6 +29,11 @@
 		AE171B3F2089A01B00A24327 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE171B3E2089A01B00A24327 /* UIViewControllerExtension.swift */; };
 		AE224AD62084892700D85CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE224ACE2084892400D85CD2 /* AppDelegate.swift */; };
 		AE224AD72084892700D85CD2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE224ACF2084892500D85CD2 /* LoginViewController.swift */; };
+		AE68851A2105C4C300C524C6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6885192105C4C300C524C6 /* Storyboard.storyboard */; };
+		AE68851C2105CB5200C524C6 /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68851B2105CB5200C524C6 /* BookDetailsViewController.swift */; };
+		AEA56DF52106D33A00AE3021 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA56DF42106D33A00AE3021 /* SettingsViewController.swift */; };
+		AEA56DF92106DFA900AE3021 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA56DF82106DFA900AE3021 /* ForgotPasswordViewController.swift */; };
+		AEA56DFD2106E03000AE3021 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA56DFB2106E03000AE3021 /* HomeViewController.swift */; };
 		AEDE72B1207B12FD00771B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDE72AF207B12FD00771B25 /* Main.storyboard */; };
 		AEDE72B3207B12FD00771B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDE72B2207B12FD00771B25 /* Assets.xcassets */; };
 		AEDE72B6207B12FD00771B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDE72B4207B12FD00771B25 /* LaunchScreen.storyboard */; };
@@ -81,6 +86,11 @@
 		AE224AC92084892000D85CD2 /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE224ACE2084892400D85CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE224ACF2084892500D85CD2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AE6885192105C4C300C524C6 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		AE68851B2105CB5200C524C6 /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
+		AEA56DF42106D33A00AE3021 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AEA56DF82106DFA900AE3021 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		AEA56DFB2106E03000AE3021 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AEDE72A8207B12FD00771B25 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDE72B0207B12FD00771B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEDE72B2207B12FD00771B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +148,8 @@
 		4275328B208604170089BA91 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				AEA56DFA2106E01D00AE3021 /* Home */,
+				AEA56DF32106D32A00AE3021 /* Settings */,
 				AE530F8021018054006266E3 /* Authentication */,
 				4275329A2086050B0089BA91 /* HelloWorld */,
 				4275329C208605310089BA91 /* HelloGem */,
@@ -317,8 +329,25 @@
 			isa = PBXGroup;
 			children = (
 				AE224ACF2084892500D85CD2 /* LoginViewController.swift */,
+				AEA56DF82106DFA900AE3021 /* ForgotPasswordViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AEA56DF32106D32A00AE3021 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AEA56DF42106D33A00AE3021 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AEA56DFA2106E01D00AE3021 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AEA56DFB2106E03000AE3021 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		AEDE729F207B12FD00771B25 = {
@@ -352,7 +381,9 @@
 				4275328C208604430089BA91 /* BaseComponents */,
 				4275328B208604170089BA91 /* Scenes */,
 				AE224ACE2084892400D85CD2 /* AppDelegate.swift */,
+				AE68851B2105CB5200C524C6 /* BookDetailsViewController.swift */,
 				AEDE72AF207B12FD00771B25 /* Main.storyboard */,
+				AE6885192105C4C300C524C6 /* Storyboard.storyboard */,
 				AEDE72B2207B12FD00771B25 /* Assets.xcassets */,
 				AEDE72B4207B12FD00771B25 /* LaunchScreen.storyboard */,
 				AEDE72B7207B12FD00771B25 /* Info.plist */,
@@ -506,6 +537,7 @@
 				AEDE72B3207B12FD00771B25 /* Assets.xcassets in Resources */,
 				427532A5208605530089BA91 /* HelloWorldViewControler.xib in Resources */,
 				427532A22086054D0089BA91 /* HelloVietNamViewController.xib in Resources */,
+				AE68851A2105C4C300C524C6 /* Storyboard.storyboard in Resources */,
 				AEDE72B1207B12FD00771B25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +648,9 @@
 				AE171B3A20899C8100A24327 /* APIRequestProvider.swift in Sources */,
 				AE171B3F2089A01B00A24327 /* UIViewControllerExtension.swift in Sources */,
 				4222E7302092E1F900D6B2FA /* EmployeeDTO.swift in Sources */,
+				AE68851C2105CB5200C524C6 /* BookDetailsViewController.swift in Sources */,
+				AEA56DFD2106E03000AE3021 /* HomeViewController.swift in Sources */,
+				AEA56DF52106D33A00AE3021 /* SettingsViewController.swift in Sources */,
 				AE171B3D20899E4700A24327 /* UserServices.swift in Sources */,
 				427532AF208606720089BA91 /* Singleton.swift in Sources */,
 				4222E7322092E2BE00D6B2FA /* DepartmentDTO.swift in Sources */,
@@ -626,6 +661,7 @@
 				427532A8208605580089BA91 /* HelloSingaporeViewController.swift in Sources */,
 				427532AC208606110089BA91 /* UIColorExtention.swift in Sources */,
 				427532A12086054D0089BA91 /* HelloVietNamViewController.swift in Sources */,
+				AEA56DF92106DFA900AE3021 /* ForgotPasswordViewController.swift in Sources */,
 				AE171B3B20899C8100A24327 /* APIServiceObject.swift in Sources */,
 				427532A6208605530089BA91 /* HelloWorldViewControler.swift in Sources */,
 				4275329E208605480089BA91 /* HelloGemViewController.swift in Sources */,
