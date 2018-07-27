@@ -37,27 +37,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupTabbarController() {
-//        let helloVietNamViewController = HelloVietNamViewController(nibName: "HelloVietNamViewController", bundle: nil)
-//        let vietnamNavigationController = UINavigationController(rootViewController: helloVietNamViewController)
-//        helloVietNamViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
-//
-//        let helloSingaporeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelloSingaporeViewController")
-//        let singaporeNavigationController = UINavigationController(rootViewController: helloSingaporeViewController)
-//        helloSingaporeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
-//
-//        let rootTabbarController = UITabBarController()
-//        rootTabbarController.viewControllers = [vietnamNavigationController, singaporeNavigationController]
-        
         let rootTabbarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "rootTabbarController")
         window?.rootViewController = rootTabbarController
         window?.makeKeyAndVisible()
-        
-    }        
+    }
+    
+    func setupAuthenticationController() {
+        let navigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginNavigation")
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
     
     func setupDefaultAppearance() {
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().barTintColor = UIColor.red
-//        UIBarButtonItem.appearance().setTitleTextAttributes([n], for: <#T##UIControlState#>)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

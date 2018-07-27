@@ -20,7 +20,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dkD-4m-tko">
             <objects>
-                <navigationController navigationBarHidden="YES" id="iPR-1m-U19" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginNavigation" navigationBarHidden="YES" id="iPR-1m-U19" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dXP-7x-w7w">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -238,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRd-dq-0k8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65" y="708"/>
+            <point key="canvasLocation" x="-65" y="714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eqQ-Aj-RtP">
@@ -256,13 +256,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6Y-n5-Zs2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65" y="1297"/>
+            <point key="canvasLocation" x="-65" y="1393"/>
         </scene>
         <!--Home-->
         <scene sceneID="efh-X2-usf">
             <objects>
                 <navigationController id="2Xy-iH-MFj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="36v-X8-5ya"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="ic_home" id="36v-X8-5ya"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y3o-PO-Xmu">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -308,7 +308,7 @@
         <scene sceneID="dtf-O6-xzU">
             <objects>
                 <navigationController id="1cU-EA-BTI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="GsU-Kd-gea"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="ic_settings" id="GsU-Kd-gea"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CTD-wY-YLq">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -329,7 +329,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_swift" translatesAutoresizingMaskIntoConstraints="NO" id="B88-RN-dh3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sil-male" translatesAutoresizingMaskIntoConstraints="NO" id="B88-RN-dh3">
                                 <rect key="frame" x="30" y="109" width="62" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="B88-RN-dh3" secondAttribute="height" multiplier="43:45" id="spQ-3P-a2B"/>
@@ -347,13 +347,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Thanh Tâm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh8-Lm-0gq">
                                         <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="21.666666666666668"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID: 00040" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLn-Zl-o0Z">
                                         <rect key="frame" x="0.0" y="29.666666666666671" width="160.66666666666666" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.59999999999999998" green="0.72156862745098038" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -373,9 +373,12 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onLogout:" destination="AMd-K1-ewz" eventType="touchUpInside" id="ua9-9u-F9m"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.24705882352941178" green="0.37254901960784315" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="B88-RN-dh3" firstAttribute="leading" secondItem="V1e-Th-0gf" secondAttribute="leading" constant="30" id="ALl-k8-E4M"/>
                             <constraint firstItem="pF6-4s-BCF" firstAttribute="leading" secondItem="V1e-Th-0gf" secondAttribute="leading" constant="20" id="Bw3-Dt-J3W"/>
@@ -388,6 +391,11 @@
                         <viewLayoutGuide key="safeArea" id="V1e-Th-0gf"/>
                     </view>
                     <navigationItem key="navigationItem" id="buz-Kj-FcG"/>
+                    <connections>
+                        <outlet property="employeeIdLabel" destination="VLn-Zl-o0Z" id="ogE-65-QKE"/>
+                        <outlet property="logoutButton" destination="pF6-4s-BCF" id="aG1-sr-Pdi"/>
+                        <outlet property="nameLabel" destination="sh8-Lm-0gq" id="8vs-1b-kF3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmN-yS-KAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -718,8 +726,10 @@
     </scenes>
     <resources>
         <image name="gem2017" width="181" height="61"/>
-        <image name="icon_swift" width="120" height="120"/>
+        <image name="ic_home" width="30" height="30"/>
+        <image name="ic_settings" width="30" height="30"/>
         <image name="image" width="1080" height="1022"/>
         <image name="send" width="99" height="99"/>
+        <image name="sil-male" width="121" height="137"/>
     </resources>
 </document>

@@ -10,10 +10,16 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var employeeIdLabel: UILabel!
+    @IBOutlet weak var logoutButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        logoutButton.layer.cornerRadius = 4
+        logoutButton.layer.borderColor = UIColor.blue.cgColor
+        logoutButton.layer.borderWidth = 1.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +28,7 @@ class SettingsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onLogout(_ sender: Any) {
+        (UIApplication.shared.delegate as? AppDelegate)?.setupAuthenticationController()
     }
-    */
-
 }
